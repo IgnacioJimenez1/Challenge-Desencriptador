@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Encriptación y Desencriptación</h1>
+      
+      <fieldset>
+        <legend>Seleccione una operación:</legend>
+        <label for="encrypt">Encriptar</label>
+        <input type="radio" name="operation" id="encrypt" value="encrypt" checked>
+        <label for="decrypt">Desencriptar</label>
+        <input type="radio" name="operation" id="decrypt" value="decrypt">
+      </fieldset>
+      <textarea id="input" placeholder="Ingresa el texto aquí"></textarea>
+      <br>
+      <button onclick="convert()">Convertir</button>
+      <button onclick="copy()">Copiar</button>
+      <br>
+      <textarea id="output" placeholder="El resultado aparecerá aquí"></textarea>
+    </div>
+   
+    <script src="script.js"></script>
+    
+  </body>
+</html>
